@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,43 +8,83 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="bodyContainer">
 
-        <div class="mainCharacterView left" >
-                <div class="nameBox">USS Schwarzenegger</div>
-                <div class="playerImage"></div>
-                <div class="playerStats">
+        <div class="mainCharacterView left">
+            <div class="nameBox">USS Schwarzenegger</div>
+            <div class="playerImage"></div>
+            <div class="playerStats">
 
-                Hull : 15 <br>
-                FirePower : 5 <br>
-                Accuracy : .7 <br>
+                <dt>Hull</dt>
+                <dd id="pHull"></dd>
+
+                <dt>Fire Power</dt>
+                <dd id="pFPower"></dd>
+
+                <dt>Accuracy</dt>
+                <dd id="pAccuracy"></dd>
+                <button id="attackBtn" onmousedown="audio.play()">Attack</button>
+
+            </div>
 
 
 
-                </div>
+            <div class="mainCharacterView right">
 
-        </div>
-
-
-        <div class="mainCharacterView right">
-           
-            <div class="nameBox">Enemy</div>
-            <div class="enemyImage"></div>
+                <div class="nameBox">Enemy</div>
+                <div class="enemyImage"></div>
                 <div class="enemyStats">
-                    Hull : 6 <br>
-                    FirePower : 3 <br>
-                    Accuracy : .6 <br>
-    
-    
+                    <dt>Hull</dt>
+                    <dd id="pHull"></dd>
+
+                    <dt>Fire Power</dt>
+                    <dd id="pFPower"></dd>
+
+                    <dt>Accuracy</dt>
+                    <dd id="pAccuracy"></dd>
+
+                    <button id="attackBtn" onmousedown="audio.play()">Attack</button>
+
                 </div>
-            
-        </div>
+
+            </div>
 
 
-    <script src="app.js"></script>
+            <script src="new.js"></script>
 </body>
+
 </html>
+
+
+<!-- <footer>
+    <div id="dashLeft">
+      <dl>
+        <dt>Name</dt>
+        <dd id="pName"></dd>
+      </dl>
+      <button id="attackBtn" onmousedown="audio.play()">Attack</button>
+      <button id="choiceBtn" type="button"></button>
+      <div id="choiceMenu">
+        <button id="retreat">Retreat.</button>
+        <button id="stay">Continue. You may DIE</button>
+      </div>
+    </div>
+    <div id="#dashRight">
+      <dl>
+        <dt>Hull</dt>
+        <dd id="pHull"></dd>
+      </dl>
+      <dl>
+        <dt>Fire Power</dt>
+        <dd id="pFPower"></dd>
+      </dl>
+      <dl>
+        <dt>Accuracy</dt>
+        <dd id="pAccuracy"></dd>
+      </dl>
+</footer>       -->

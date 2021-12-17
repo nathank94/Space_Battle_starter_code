@@ -95,3 +95,38 @@ align-items: center;
     box-shadow: 0px 0px 20px 10px white;
 
 }
+footer {
+    flex: 2;
+    width: 100%;
+    display: flex;
+    /* font-size: 1.5em; */
+  }
+  footer div {
+    background-color: blue;
+    background-image: linear-gradient(blue, #000049);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  footer div:first-child {
+    flex: 1;
+    position: relative;
+  }
+  
+  footer div:last-child {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  dl {
+    display: inline-block;
+  }
+  dt {
+    text-transform: uppercase;
+    margin-bottom: 0.7em;
+  }
+  dd {
+    padding-left: 15px;
+  }
+  
